@@ -11,9 +11,10 @@ const About = () => {
         </div>
 
         <div className="textContainer">
-          <p>Hola! Soy Juan Bertuggia, y estoy empezando en este camino de desarrollo web.
-            Soy técnico IT hace mas de 10 años y estoy buscando crecer e ir por otros rumbos.
-            Decidi empezar a realizar cursos sobre desarrollo web, empezando por lo basico (HTML, CSS, Javascript) hasta la intruducción a frameworks,en mi caso, a React Js.
+          <p>Hola! Soy Juan Marcos Bertuggia, y estoy empezando este camino como desarrollador web.
+            Soy técnico IT hace mas de 10 años y busco crecer ir por otros caminos y seguir creciendo.
+            Decidí realizar cursos para front-end, empezando por lo básico (HTML, CSS, Javascript) hasta la intruducción a frameworks,en mi caso, a React Js.
+            Les dejo mis proyectos que hice durante este tiempo de estudio, en donde van a poder ver las distintas herramientas y conocimientos implementados.
           </p>
         </div>
 
