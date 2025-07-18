@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.contactFooterContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    font-family:ubuntu Condensed;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.linkContactFooterContainer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
+    
+}
+
+.linkContactFooterContainer img {
+    width: 23px;
+    height: 23px;
+   padding-left: 5px;
+    
+
+}

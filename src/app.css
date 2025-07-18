@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.appDark {
+  transition: background 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #18181e;
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+
+.appDark div {
+  transition: background 0.3s ease, color 0.3s ease;
+  background-color: #18181e;
+}
+
+.appDark nav {
+  background-color: rgb(50, 50, 50);
+}
+
+.appDark footer {
+  background-color: rgb(50, 50, 50);
+}
+
+.appDark p,
+.appDark h2,
+.appDark h1 {
+  transition: background 0.3s ease, color 0.3s ease;
+  color: #ffffff;
+}
+
+.appDark video {
+  transition: background 0.3s ease, color 0.3s ease;
+  box-shadow: 0px 0px 17px 0px #ffffff;
+}
+
+
+
