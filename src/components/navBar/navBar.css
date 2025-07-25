@@ -1,35 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 .navContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-bottom: 1px solid rgb(202, 202, 202);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: rgb(50, 50, 50);
-    color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+
+.burguerButton {
+  display: none;
 }
 
 .linkContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 10px;
-    width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  width: 50%;
+  margin: 0;
 }
+
 .navLink {
-  
-    border: none;
-    text-decoration: none;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-family: Gowun Dodum;
-    color: rgb(255, 255, 255);
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Gowun Dodum;
+}
+
+.navLink a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .navLink:hover {
@@ -42,3 +52,43 @@
 
 
 
+/* 📱 Responsive */
+@media (max-width: 700px) {
+  .burguerButton {
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    margin: 10px;
+    color: white;
+    border: none;
+    background-color: transparent;
+  }
+
+  .navContainer {
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+  }
+
+  .linkContainer {
+    display: none;
+
+  }
+
+  .linkContainer.open {
+    display: flex;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    flex-direction: column;
+    background-color: #747474;
+    width: 30%;
+    padding: 1rem;
+  }
+}
+
+/* Ocultar burguer button */
+@media (min-width: 720px) {
+  .burguerButton {
+    display: none;
+  }
+}

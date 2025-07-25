@@ -1,18 +1,28 @@
 import './navBar.css'
+import { useState } from 'react'
 
-const NavBar = ({children}) => {
+const NavBar = ({ children }) => {
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
     <>
       <nav className="navContainer">
 
-        <section className="linkContainer">
-          <a href="#about" className="navLink">Sobre mi</a>
-          <a href="#proyects" className="navLink">Mis proyectos</a>
-          <a href="#contact" className="navLink">Contacto</a>
-        </section>
+         <button className='burguerButton' onClick={toggleMenu}> ☰ </button>
+
+        <ul className={`linkContainer ${isOpen ? "open" : ""}`}>
+          <li className="navLink"><a href="#about" >Sobre mi</a></li>
+          <li className="navLink"><a href="#proyects">Mis proyectos</a></li>
+          <li className="navLink"><a href="#contact" >Contacto</a></li>
+        </ul>
+
         {children}
+
       </nav>
+
     </>
   )
 }
