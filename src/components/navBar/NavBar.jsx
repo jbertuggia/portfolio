@@ -7,15 +7,6 @@ const NavBar = ({ children }) => {
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
-  
-  
-  const handleScroll = () => {
-    if (isOpen) setIsOpen(false);
-  }
-
-  document.addEventListener("mousedown", handleClickOutside)
-  window.addEventListener("scroll", handleScroll)
-
   return (
     <>
       <nav className="navContainer">
