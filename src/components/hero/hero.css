@@ -10,13 +10,12 @@
     font-size: 20px;
     padding-bottom: 200px;
     padding-top: 100px;
-    background-color: rgb(255, 255, 255);
-    width: 70%;
+    background-color:#DAFDBA;
+    width: 100%;
 }
 
 .heroContainer img {
     width: 20rem;
-    height: 20rem;
     margin: 10px;
     padding: 0px;
 }
@@ -44,10 +43,11 @@
 }
 
 
-
 /* 📱 Responsive */
 @media (max-width: 700px) {
     .heroContainer {
+        display: flex;
+        flex-direction: column;
         font-size: 15px;
         padding-top: 150px;
         padding-bottom: 175px;
@@ -57,9 +57,6 @@
 
     .heroContainer img {
         width: 10rem;
-        height: 10rem;
-        
-        
     }
 
     .linkContactContainer img {
@@ -68,3 +65,5 @@
     ;
 }
 }
+
+

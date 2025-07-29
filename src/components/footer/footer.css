@@ -5,11 +5,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    font-family:ubuntu Condensed;
-    background-color: rgb(50, 50, 50);
-    color: white;
+    font-family: ubuntu Condensed;
+    background-color: #5d5d5d;
+    color: #DAFDBA;
     width: 100%;
-    margin-top: 40px;
 }
 
 .linkContactFooterContainer {
@@ -17,13 +16,13 @@
     flex-direction: row;
     padding-left: 10px;
     align-items: center;
-    
+
 }
 
 .linkContactFooterContainer img {
     width: 23px;
     height: 23px;
-   padding-left: 5px;
-    
+    padding-left: 5px;
+
 
 }

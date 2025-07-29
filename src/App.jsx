@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className={darkMode ? "appDark" : "app"}>
-      <NavBar>
+      <NavBar >
         <DarkModeToggle darkMode={darkMode} handleDarkMode={handleDarkMode} />
       </NavBar>
       <Hero />

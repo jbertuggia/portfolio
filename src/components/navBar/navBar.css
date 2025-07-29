@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 .navContainer {
+  transition: background 0.3s ease, color 0.3s ease;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,8 +12,8 @@
   right: 0;
   width: 100%;
   z-index: 100;
-  background-color: rgb(50, 50, 50);
-  color: white;
+  background-color: #5d5d5d;
+  color: #DAFDBA;
 }
 
 .burguerButton {
