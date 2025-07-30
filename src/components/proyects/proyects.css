@@ -8,11 +8,12 @@
     align-items: center;
     font-family: Ubuntu Condensed;
     padding: 10px;
-    padding-top: 100px;
+    padding-top: 200px;
     background-color: #9AEBA3;
 }
 
-.proyectContainer {
+.proyectContainer1,
+.proyectContainer2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,19 +21,27 @@
     padding-bottom: 100px;
 }
 
-.videoContainer {
+.proyectTitleMobile1,
+.proyectTitleMobile2 {
+    display: none;
+}
+
+.videoContainer1,
+.videoContainer2 {
     display: flex;
     flex: 50%;
     box-shadow: 5px 5px 10px 1px #000000;
     margin: 5px;
 }
 
-.videoContainer video {
+.videoContainer1 video,
+.videoContainer2 video {
     width: 100%;
     object-fit: cover;
 }
 
-.infoContainer {
+.infoContainer1,
+.infoContainer2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,28 +50,73 @@
     padding: 20px;
 }
 
-.infoContainer p {
+.infoContainer1 p,
+.infoContainer2 p {
     text-align: center;
     font-family: Gowun Dodum;
 }
 
-.linkButton {
+.linkButton1,
+.linkButton2 {
     border-radius: 10px;
     background-color: rgb(20, 20, 20);
     color: white;
     text-decoration: none;
     padding: 10px;
-    border-color: rgb(255, 21, 76);
+    margin-top: 20px;
 }
 
 
-/* 📱 Responsive */
+/* Responsive */
 @media (max-width: 700px) {
-    .proyectContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 5px;
-    padding-bottom: 20px;
+
+    .proyectsContainer {
+    padding-top:60px;
+ 
 }
+
+    .proyectContainer1,
+    .proyectContainer2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 5px;
+        padding-bottom: 20px;
+    }
+
+    .proyectTitleMobile1,
+    .proyectTitleMobile2 {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .proyectTitleMobile2 {
+        margin-top: 50px;
+    }
+
+    .infoContainer1,
+    .infoContainer2 {
+        order: 3;
+        font-size: 18px;
+    }
+
+    .infoContainer1 p,
+    .infoContainer2 p {
+        margin: 0;
+    }
+
+    .proyectTitleWeb1,
+    .proyectTitleWeb2 {
+        display: none;
+    }
+
+    .videoContainer1,
+    .videoContainer2 {
+        order: 2;
+    }
 }

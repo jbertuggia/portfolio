@@ -4,25 +4,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     font-family: ubuntu Condensed;
+    font-size: 13px;
     background-color: #5d5d5d;
     color: #DAFDBA;
     width: 100%;
+    border-top: 1px solid rgb(202, 202, 202);
 }
 
-.linkContactFooterContainer {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
-    align-items: center;
-
+.nombre {
+    padding-left: 15px;
 }
 
-.linkContactFooterContainer img {
-    width: 23px;
-    height: 23px;
-    padding-left: 5px;
-
-
+.lugar {
+    padding-right: 15px;
 }

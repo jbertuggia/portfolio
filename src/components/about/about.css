@@ -7,6 +7,8 @@
     font-family: gowun dodum;
     font-size: 16px;
     background-color: #DAFDBA;
+    padding-top: 100px;
+
 }
 
 .photoContainer {
@@ -14,7 +16,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .photoContainer img {
@@ -34,18 +36,20 @@
 /* 📱 Responsive */
 @media (max-width: 700px) {
 
-
-
     .photoContainer img {
-        width: 10rem;
+        display: none;
+    }
+
+    .aboutContainer {
+        padding-top: 0;
+        padding-bottom: 230px;
+
     }
 
     .textContainer {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    align-items: center;
-    width: 100%;
-    font-size: 15px;
-}
+        padding-top: 0;
+        width: 85%;
+        font-size: 20px;
+        text-align: center;
+    }
 }

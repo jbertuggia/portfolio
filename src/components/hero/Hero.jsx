@@ -10,7 +10,7 @@ const Hero = () => {
           <a href="mailto:juan.bertuggia@gmail.com"><img src="/img/gmail.png" alt="" /></a>
       </div>
             </div>
-            <img src="/img/perfil.png" alt="" />
+            <img className='heroProfileImg' src="/img/perfil.png" alt="" />
         </div>
     )
 }

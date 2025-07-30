@@ -10,11 +10,11 @@
     font-size: 20px;
     padding-bottom: 200px;
     padding-top: 100px;
-    background-color:#DAFDBA;
+    background-color: #DAFDBA;
     width: 100%;
 }
 
-.heroContainer img {
+.heroProfileImg {
     width: 20rem;
     margin: 10px;
     padding: 0px;
@@ -43,27 +43,29 @@
 }
 
 
-/* 📱 Responsive */
+/* Responsive */
 @media (max-width: 700px) {
     .heroContainer {
         display: flex;
         flex-direction: column;
         font-size: 15px;
         padding-top: 150px;
-        padding-bottom: 175px;
+        padding-bottom: 50px;
         background-color: rgb(255, 255, 255);
         width: 100%;
     }
 
-    .heroContainer img {
+    .heroProfileImg {
+        order: 1;
         width: 10rem;
     }
 
+    .textHeroContainer {
+        order: 2;
+    }
+
     .linkContactContainer img {
-    width: 30px;
-    height: 30px;
-    ;
+        width: 30px;
+        height: 30px;
+    }
 }
-}
-
-

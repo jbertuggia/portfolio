@@ -1,11 +1,12 @@
 import './navBar.css'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 const NavBar = ({ children }) => {
 
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => setIsOpen(!isOpen)
+
 
   return (
     <>
@@ -15,6 +16,12 @@ const NavBar = ({ children }) => {
 
         <ul className={`linkContainer ${isOpen ? "open" : ""}`}>
           <li className="navLink"><a href="#about" >Sobre mi</a></li>
+          <li className="navLink"><a href="#proyects">Mis proyectos</a></li>
+          <li className="navLink"><a href="#contact" >Contacto</a></li>
+        </ul>
+
+          <ul className={`linkContainerMobile ${isOpen ? "open" : ""}`}>
+          <li className="navLink"><a href="#hero" >Sobre mi</a></li>
           <li className="navLink"><a href="#proyects">Mis proyectos</a></li>
           <li className="navLink"><a href="#contact" >Contacto</a></li>
         </ul>

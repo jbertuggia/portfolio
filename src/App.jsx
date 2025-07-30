@@ -11,7 +11,7 @@ import Hero from "./components/hero/Hero"
 import Proyects from "./components/proyects/Proyects"
 import Footer from './components/footer/Footer'
 import DarkModeToggle from './components/darkModeToggle/DarkModeToggle'
-import Greetings from './components/greetings/Greetings'
+import Contact from './components/contact/Contact'
 
 //Animaciones librerias
 import 'animate.css';
@@ -37,7 +37,7 @@ function App() {
       <Hero />
       <About />
       <Proyects />
-      <Greetings />
+      <Contact />
       <Footer />
     </div>
   )
