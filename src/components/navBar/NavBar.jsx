@@ -34,6 +34,19 @@ const NavBar = ({ children }) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isOpen])
 
+  useEffect(() => {
+  const handleContextMenu = (e) => {
+    const tag = e.target.tagName.toLowerCase();
+    if (tag === 'img' || tag === 'video') {
+      e.preventDefault();
+    }
+  };
+
+  document.addEventListener('contextmenu', handleContextMenu);
+  return () => {
+    document.removeEventListener('contextmenu', handleContextMenu);
+  };
+}, []);
 
 
   return (
